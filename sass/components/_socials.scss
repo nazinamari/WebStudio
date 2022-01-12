@@ -1,0 +1,23 @@
+.social-list {
+  @extend %align-list;
+}
+
+.social-list__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-icon {
+  fill: currentColor;
+}
+.social-list {
+  & + & {
+    padding-left: 10px;
+  }
+}
+
+.social-list__item {
+  & + & {
+    margin-left: 10px;
+  }
+}
