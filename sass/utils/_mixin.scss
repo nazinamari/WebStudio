@@ -1,6 +1,8 @@
-@mixin font-title($fw, $fz, $lh, $ls) {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+@mixin font($ff, $fw, $fs, $lh, $ls, $fc) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $fc;
 }

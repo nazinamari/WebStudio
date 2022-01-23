@@ -6,6 +6,9 @@
   --background-color: #2f303a;
   --footer-adress: rgba(255, 255, 255, 0.6);
   --social-links: #afb1b8;
+  --button-hover-color: #188ce8;
+  --button-hover-text-color: rgba(255, 255, 255, 1);
+  --main-effects-option: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -21,20 +24,14 @@
   margin: -1px;
 }
 
-.hero__btn, .modal-btn, .sub-btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+.modal-btn, .sub-btn, .hero__btn {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  letter-spacing: 0.06em;
-  font-family: inherit;
   border: none;
   cursor: pointer;
   min-width: 200px;
   height: 50px;
   background-color: var(--accent-color);
-  color: #ffffff;
 }
 
 .social-list, .clients-list, .clients-link {
@@ -145,11 +142,6 @@ ul {
 
 .social-list__item + .social-list__item {
   margin-left: 10px;
-}
-
-.hero__btn {
-  left: 700px;
-  top: 430px;
 }
 
 .modal-btn {
@@ -320,10 +312,8 @@ ul {
   min-height: 400px;
   max-width: 1600px;
   background-color: var(--background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mob-hero.jpg);
   background-repeat: no-repeat;
@@ -362,17 +352,47 @@ ul {
 }
 
 .hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--main-title-color);
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 360px;
   margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+  left: 700px;
+  top: 430px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+  transition: color var(--main-effects-option), background-color var(--main-effects-option);
+}
+
+.hero__btn:hover, .hero__btn:focus, .hero__btn:active {
+  background-color: var(--button-hover-color);
+  color: var(--button-hover-text-color);
+  fill: var(--button-hover-text-color);
 }
 
 .team {
