@@ -2,9 +2,7 @@
   min-height: 400px;
   max-width: 1600px;
   background-color: var(--background-color);
-  display: flex;
-  align-items: center;
-  text-align: center;
+  @extend %align-list;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -28,32 +26,35 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/tablet/tab-hero.jpg);
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/tablet/tab-hero-2x.jpg);
-    }
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/tablet/tab-hero-2x.jpg);
+  }
   @media screen and (min-width: 1200px) {
     min-height: 600px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Hero-Img.jpg); }
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/Hero-Img-2x.jpg);
-    }
+      url(../images/Hero-Img.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Hero-Img-2x.jpg);
+  }
   &__title {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     max-width: 360px;
@@ -67,14 +68,14 @@
     }
   }
   &__btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    @extend %btn;
+    @extend %align-list;
     padding: 10px 32px;
     left: 700px;
     top: 430px;
+    margin-left: auto;
+    margin-right: auto;
     @include font(Roboto, 700, 16px, 1.87, 0.06em, var(--main-title-color));
-    @extend %btn;
     transition: color var(--main-effects-option),
       background-color var(--main-effects-option);
     &:hover,
@@ -82,7 +83,7 @@
     &:active {
       background-color: var(--button-hover-color);
       color: var(--button-hover-text-color);
-      fill: var(--button-hover-text-color); }
+      fill: var(--button-hover-text-color);
     }
-  }  
-}       
+  }
+}
