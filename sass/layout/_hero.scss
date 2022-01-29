@@ -43,7 +43,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Hero-Img.jpg);
+      url(../images/Hero-Img.jpg); }
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -53,7 +53,6 @@
         ),
         url(../images/Hero-Img-2x.jpg);
     }
-  }
   &__title {
     margin-left: auto;
     margin-right: auto;
@@ -83,7 +82,7 @@
     &:active {
       background-color: var(--button-hover-color);
       color: var(--button-hover-text-color);
-      fill: var(--button-hover-text-color);
+      fill: var(--button-hover-text-color); }
     }
-  }
-}
+  }  
+}       
