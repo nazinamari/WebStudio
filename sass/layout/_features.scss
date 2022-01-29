@@ -2,53 +2,60 @@
   background-color: var(--main-title-color);
   text-align: center;
   &-icon__wrap {
-    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
     height: 120px;
     background-color: var(--secondary-background-color);
     border-radius: 4px;
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
+      width: 354px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+    }
   }
 }
 
-// .features-list {
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin-left: -15px;
-//   }
-//   &__item {
-//     &__item:not(:last-child) {
-//       margin-right: 30px;
-//     }
-//     @media screen and (min-width: 768px) {
-//       text-align: left;
-//       flex-basis: calc(100% / 2 - 30px);
-//       margin: 15px;
-//       &:not(:last-child) {
-//         margin-bottom: 0;
-//       }
-//     }
-//   }
+.features-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 
-//   .features-item__title {
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: var(--second-title-color);
-//     margin-bottom: 10px;
-//   }
+.features-list__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
 
-//   .features-item__text {
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     color: var(--first-text-color);
-//   }
-// }
+.features-item__title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  @include font(Roboto, 700, 14px, 1.14, 0.03em, var(--second-title-color));
+}
+
+.features-item__text {
+  text-align: left;
+  @include font(Roboto, 400, 14px, 1.71, 0.03em, var(--first-text-color));
+}
