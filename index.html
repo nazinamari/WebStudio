@@ -156,12 +156,34 @@
             </div>
         </section> 
             <!--our team-->
-        <!-- <section class="section team">
+        <section class="section team">
             <div class="container">
                 <h2 class="second-title team__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img src="./images/img.jpg" lang="en" alt="Product Designer" width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/img.jpg 1x,
+                                    ./images/img-2x.jpg 2x,
+                                "
+                                media="(min-width:1200px)" />
+                            <source 
+                                srcset="
+                                    ./images/tablet/tab-igor.jpg 1x,
+                                    ./images/tablet/tab-igor-2x.jpg 2x,
+                                " 
+                                media="(min-width:768px)" />
+                            <source srcset="
+                                    ./images/mobile/mob-igor.jpg 1x,
+                                    ./images/mobile/mob-igor-2x.jpg 2x,
+                                " media="(min-width:320px)" />
+                            <img 
+                                src="./images/img.jpg" 
+                                lang="en" alt="Product Designer"
+                                class="team-img" 
+                                />
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p lang="en" class="job-title">Product Designer</p>
@@ -171,7 +193,7 @@
                                         lang="en"
                                         title="Instagram"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
@@ -182,7 +204,7 @@
                                         lang="en"
                                         title="Twitter"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
@@ -193,7 +215,7 @@
                                         lang="en"
                                         title="Facebook"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
@@ -204,7 +226,7 @@
                                         lang="en"
                                         title="Linkedin"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -214,7 +236,27 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img2.jpg" lang="en" alt="Frontend Developer" width="270" height="260" class="team-img">
+                        <picture>
+                            <source 
+                                srcset="
+                                    ./images/img2.jpg 1x,
+                                    ./images/img2-2x.jpg 2x,
+                                " media="(min-width:1200px)" />
+                            <source 
+                                srcset="
+                                    ./images/tablet/tab-olga.jpg 1x,
+                                    ./images/tablet/tab-olga-2x.jpg 2x,
+                                " media="(min-width:768px)" />
+                            <source 
+                                srcset="
+                                    ./images/mobile/mob-olga.jpg 1x,
+                                    ./images/mobile/mob-olga-2x.jpg 2x,
+                                " media="(min-width:320px)" />
+                            <img 
+                            src="./images/img2.jpg" 
+                            lang="en" alt="Frontend Developer" 
+                            class="team-img"/>
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p lang="en" class="job-title">Frontend Developer</p>
@@ -224,7 +266,7 @@
                                         lang="en"
                                         title="Instagram"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
@@ -235,7 +277,7 @@
                                         lang="en"
                                         title="Twitter"
                                         href="#!"
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
@@ -246,7 +288,7 @@
                                         lang="en"
                                         title="Facebook"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
@@ -257,7 +299,7 @@
                                         lang="en"
                                         title="Linkedin"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -267,7 +309,26 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img3.jpg" lang="en" alt="Marketing Specialist" width="270" height="260" class="team-img">
+                        <picture>
+                            <source 
+                                srcset="
+                                    ./images/img3.jpg 1x,
+                                    ./images/img3-2x.jpg 2x,
+                                " media="(min-width:1200px)" />
+                            <source 
+                                srcset="
+                                    ./images/tablet/tab-nikolay.jpg 1x,
+                                    ./images/tablet/tab-nikolay-2x.jpg 2x,
+                                " media="(min-width:768px)" />
+                            <source 
+                                srcset="
+                                    ./images/mobile/mob-nikolay.jpg 1x,
+                                    ./images/mobile/mob-nikolay-2x.jpg 2x,
+                                " media="(min-width:320px)" />
+                            <img src="./images/img3.jpg" 
+                            lang="en" alt="Marketing Specialist" 
+                            class="team-img">
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p lang="en" class="job-title">Marketing</p>
@@ -277,7 +338,7 @@
                                         lang="en"
                                         title="Instagram"
                                         href="#!"
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
@@ -288,7 +349,7 @@
                                         lang="en"
                                         title="Twitter"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
@@ -299,7 +360,7 @@
                                         lang="en"
                                         title="Facebook"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
@@ -310,7 +371,7 @@
                                         lang="en"
                                         title="Linkedin"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -320,7 +381,25 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img4.jpg" lang="en" alt="UI Designer" width="270" height="260" class="team-img">
+                        <picture>
+                            <source 
+                                srcset="
+                                    ./images/img4.jpg 1x,
+                                    ./images/img4-2x.jpg 2x,
+                                " media="(min-width:1200px)" />
+                            <source 
+                                srcset="
+                                    ./images/tablet/tab-mikail.jpg 1x,
+                                    ./images/tablet/tab-mikail-2x.jpg 2x,
+                                " media="(min-width:768px)" />
+                            <source 
+                                srcset="
+                                    ./images/mobile/mob-michail.jpg 1x,
+                                    ./images/mobile/mob-michail-2x.jpg 2x,
+                                " media="(min-width:320px)" />
+                            <img src="./images/img4.jpg" 
+                            lang="en" alt="Marketing Specialist" class="team-img">
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p lang="en" class="job-title">UI Designer</p>
@@ -330,7 +409,7 @@
                                         lang="en"
                                         title="Instagram"
                                         href="#!"
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
@@ -341,7 +420,7 @@
                                         lang="en"
                                         title="Twitter"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
@@ -352,7 +431,7 @@
                                         lang="en"
                                         title="Facebook"
                                         href="#!"  
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
@@ -363,7 +442,7 @@
                                         lang="en"
                                         title="Linkedin"
                                         href="#!" 
-                                        class="social-link">
+                                        class="social-list__link">
                                         <svg class="social-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -374,7 +453,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     <!--clients-->
         <!-- <section class="section clients">
             <div class="container">
