@@ -1,0 +1,111 @@
+.open-menu__btn {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  transition: fill var(--main-effects-option);
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--button-hover-color);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-close__btn {
+  width: 40px;
+  height: 40px;
+  @extend %align-list;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.close-menu__icon {
+  fill: var(--second-title-color);
+  transition: var(--main-effects-option);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.mob-menu {
+  z-index: 5;
+  position: fixed;
+  inset: 0;
+  padding: 48px 40px;
+  background-color: #fff;
+  transition: var(--main-effects-option);
+  &.is-hidden {
+    transform: translateX(100%);
+  }
+  &_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+.mob-menu-bottom {
+  margin-top: auto;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.mob-menu__nav-link {
+  @include font(Roboto, 500, 40px, 1.17, 0.02em, var(--second-title-color));
+  transition: color var(--main-effects-option);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+}
+
+.mob-menu__item-link-current {
+  color: var(--accent-color);
+}
+.mob-menu__contacts-list {
+  margin-bottom: 64px;
+}
+.mob-menu__contacts-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.mob-menu__contacts-mobile {
+  @include font(Roboto, 500, 34px, 1.17, 0.02em, var(--accent-color));
+}
+.mob-menu__contacts-mail {
+  @include font(Roboto, 500, 24px, 1.17, 0.02em, var(--first-text-color));
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+}
+.mob-menu__socials {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social__item {
+  padding-left: 10px;
+  padding-right: 10px;
+  &:not(:first-child) {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &:first-child {
+    padding-left: 0px;
+  }
+}
+.mob-menu__social__link {
+  @include font(Roboto, 500, 18px, 1.22, 0.02em, var(--accent-color));
+}
