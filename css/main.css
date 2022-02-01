@@ -35,7 +35,7 @@
   background-color: var(--accent-color);
 }
 
-.social-list, .menu-close__btn, .clients-list, .clients-link, .hero, .hero__btn, .social-list__item, .social-list__link {
+.social-list, .menu-close__btn, .clients-list, .clients-link, .hero__btn, .social-list__item, .social-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -535,13 +535,16 @@ ul {
   min-height: 400px;
   max-width: 1600px;
   background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mob-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mob-hero-2x.jpg);
   }
@@ -643,41 +646,6 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #ffffff;
-  width: 450px;
-  height: 162px;
-}
-
-@media screen and (min-width: 768px) {
-  .team__description {
-    width: 354px;
-    height: 162px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team__description {
-    width: 270px;
-    height: 168px;
-  }
-}
-
-.team-img {
-  width: 450px;
-  height: 460px;
-}
-
-@media screen and (min-width: 768px) {
-  .team-img {
-    width: 354px;
-    height: 374px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-img {
-    width: 270px;
-    height: 260px;
-  }
 }
 
 .team-list {
@@ -700,7 +668,7 @@ ul {
 
 .team-list__item {
   background-color: var(--first-text-color);
-  margin-right: 30px;
+  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -817,7 +785,6 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 450px;
   height: 120px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
