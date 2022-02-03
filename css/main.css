@@ -532,8 +532,7 @@ ul {
 }
 
 .hero {
-  min-height: 400px;
-  max-width: 1600px;
+  width: 100%;
   background-color: var(--background-color);
   display: flex;
   align-items: center;
@@ -646,6 +645,10 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #ffffff;
+}
+
+.team-img {
+  width: 100%;
 }
 
 .team-list {
