@@ -1,8 +1,7 @@
 .second-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--second-title-color);
+  @include font(Roboto, 700, 28px, 1.18, 0.03em, var(--second-title-color));
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
