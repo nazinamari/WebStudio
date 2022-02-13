@@ -21,29 +21,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #ffffff;
-    // width: 450px;
-    // height: 162px;
-    // @media screen and (min-width: 768px) {
-    //   width: 354px;
-    //   height: 162px;
-    // }
-    // @media screen and (min-width: 1200px) {
-    //   width: 270px;
-    //   height: 168px;
-    // }
   }
-  // &-img {
-  //   width: 450px;
-  //   height: 460px;
-  //   // @media screen and (min-width: 768px) {
-  //   //   width: 354px;
-  //   //   height: 374px;
-  //   // }
-  //   // @media screen and (min-width: 1200px) {
-  //   //   width: 270px;
-  //   //   height: 260px;
-  //   // }
-  // }
+  &-img {
+    width: 100%;
+  }
 }
 
 .team-list {
