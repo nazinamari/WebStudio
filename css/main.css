@@ -1318,11 +1318,6 @@ ul {
   padding-right: 3px;
 }
 
-.portfolio-container {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .project-nav {
   display: flex;
   flex-wrap: wrap;
@@ -1417,12 +1412,6 @@ ul {
 .projects-list__item:focus .project-text,
 .projects-list__item:active .project-text {
   transform: translateY(0);
-}
-
-.portfolio-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .project-item__name {
