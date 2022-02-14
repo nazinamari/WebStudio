@@ -1387,10 +1387,6 @@ ul {
   }
 }
 
-.projects-list__item {
-  position: relative;
-}
-
 .projects-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -1472,6 +1468,6 @@ ul {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform var(--main-effects-option), background-color var(--main-effects-option);
-  overflow: auto;
+  overflow-y: auto;
 }
 /*# sourceMappingURL=main.css.map */

@@ -69,7 +69,7 @@
     flex-basis: calc(100% / 3 - 30px);
     // flex-basis: calc((100% - 3 * 30px) / 3);
   }
-  position: relative;
+  // position: relative;
   &:hover .project-text,
   &:focus .project-text,
   &:active .project-text {
@@ -129,5 +129,5 @@
   transform: translateY(100%);
   transition: transform var(--main-effects-option),
     background-color var(--main-effects-option);
-  overflow: auto;
+  overflow-y: auto;
 }
