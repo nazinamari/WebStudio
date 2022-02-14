@@ -61,6 +61,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
@@ -1316,6 +1318,10 @@ ul {
 
 .agreement-text {
   padding-right: 3px;
+}
+
+.main-content {
+  display: block;
 }
 
 .project-nav {

@@ -2,6 +2,9 @@
 //   margin-left: auto;
 //   margin-right: auto;
 // }
+.main-content {
+  display: block;
+}
 
 .project-nav {
   display: flex;
@@ -76,12 +79,6 @@
     transform: translateY(0);
   }
 }
-
-// .portfolio-img {
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-// }
 
 .project-item__name {
   padding: 20px 24px;
