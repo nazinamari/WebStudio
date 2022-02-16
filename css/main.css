@@ -98,19 +98,19 @@ ul {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -1299,8 +1299,9 @@ ul {
 .project-nav {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -8px;
+  margin-top: -15px;
   margin-bottom: 40px;
+  margin-left: -8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1318,13 +1319,7 @@ ul {
 
 .project-nav__item {
   margin-left: 8px;
-  margin-bottom: 15px;
-}
-
-@media screen and (min-width: 768px) {
-  .project-nav__item {
-    margin-bottom: 0;
-  }
+  margin-top: 15px;
 }
 
 .project-nav__btn {
@@ -1357,22 +1352,18 @@ ul {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
-@media screen and (min-width: 768px) {
-  .projects-list {
-    margin: -15px;
-  }
-}
-
-.projects-list__item:not(:last-child) {
-  margin-bottom: 30px;
+.projects-list__item {
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .projects-list__item {
     flex-basis: calc(100% / 2 - 30px);
-    margin: 15px;
   }
 }
 
@@ -1380,12 +1371,6 @@ ul {
   .projects-list__item {
     flex-basis: calc(100% / 3 - 30px);
   }
-}
-
-.projects-list__item:hover .project-text,
-.projects-list__item:focus .project-text,
-.projects-list__item:active .project-text {
-  transform: translateY(0);
 }
 
 .project-item__name {
@@ -1420,10 +1405,17 @@ ul {
   max-width: 100%;
   height: 100%;
   transition: box-shadow var(--main-effects-option);
+  position: relative;
 }
 
 .project-link:hover, .project-link:focus, .project-link:active {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-link:hover .project-text,
+.project-link:focus .project-text,
+.project-link:active .project-text {
+  transform: translateY(0);
 }
 
 .project-item__wrap {
