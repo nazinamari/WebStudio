@@ -126,15 +126,50 @@ ul {
   }
 }
 
-.second-title {
-  text-align: center;
-  margin-bottom: 60px;
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 1200px) {
-  .second-title {
+  .logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+}
+
+.logo-studio__header {
+  color: var(--second-title-color);
+}
+
+.logo-studio__footer {
+  color: var(--main-title-color);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
     margin-bottom: 50px;
   }
 }
@@ -315,23 +350,13 @@ ul {
   justify-content: space-between;
 }
 
-.header-logo {
+.header .logo {
   padding-top: 16px;
   padding-bottom: 16px;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
 }
 
 @media screen and (min-width: 768px) {
-  .header-logo {
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+  .header .logo {
     padding-top: 26px;
     padding-bottom: 26px;
     margin-right: 88px;
@@ -339,24 +364,11 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
-  .header-logo {
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+  .header .logo {
     padding-top: 24px;
     padding-bottom: 24px;
     margin-right: 93px;
   }
-}
-
-.header-logo__web {
-  color: var(--accent-color);
-}
-
-.header-logo__studio {
-  color: black;
 }
 
 .header__navigation {
@@ -504,15 +516,16 @@ ul {
 }
 
 .clients-list {
+  display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .clients-list__item {
-  width: 170px;
-  height: 92px;
-  margin: 15px;
-  flex-basis: calc(100% / 2 -30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 2 - 30px);
 }
 
 @media screen and (min-width: 768px) {
@@ -530,6 +543,8 @@ ul {
 .clients-link {
   width: 100%;
   height: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--social-links);
   border: 1px solid var(--social-links);
   border-radius: 6px;
@@ -695,6 +710,10 @@ ul {
   }
 }
 
+.team-list__item:not(last-child) {
+  margin-bottom: 30px;
+}
+
 .team__name {
   font-family: Roboto;
   font-weight: 500;
@@ -820,22 +839,17 @@ ul {
   .features-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
-}
-
-.features-list__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .features-list__item {
     text-align: left;
     flex-basis: calc(100% / 2 - 30px);
-    margin: 15px;
-  }
-  .features-list__item:not(:last-child) {
-    margin-bottom: 0;
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -887,6 +901,10 @@ ul {
   }
 }
 
+.footer-info__wrap {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .footer-info__wrap {
     display: flex;
@@ -913,30 +931,9 @@ ul {
   }
 }
 
-.footer-logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
+.footer .logo {
   display: block;
   margin-bottom: 20px;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-logo {
-    font-size: 26px;
-    line-height: 1.19;
-  }
-}
-
-.footer-logo__web {
-  color: var(--accent-color);
-}
-
-.footer-logo__studio {
-  color: var(--main-title-color);
 }
 
 .footer-adress__wrap,
@@ -978,10 +975,6 @@ ul {
 .footer-tel:focus,
 .footer-tel:active {
   color: var(--accent-color);
-}
-
-.footer-social__wrap {
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1064,8 +1057,8 @@ ul {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   font-family: Roboto;
-  font-weight: 16px;
-  font-size: 400;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);

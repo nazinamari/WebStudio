@@ -10,7 +10,7 @@
     background-color: var(--secondary-background-color);
     border-radius: 4px;
     margin-bottom: 30px;
-    @media screen and (min-width: 768px) {
+    @include tab {
       width: 354px;
       display: flex;
       align-items: center;
@@ -24,24 +24,16 @@
 }
 
 .features-list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
+  @include tab {
+    @include card-set
   }
 }
 
 .features-list__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-  @media screen and (min-width: 768px) {
+  @include tab {
     text-align: left;
     flex-basis: calc(100% / 2 - 30px);
-    margin: 15px;
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
+    @include item
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - 30px);

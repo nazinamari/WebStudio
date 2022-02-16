@@ -36,6 +36,10 @@
   }
 }
 
+.team-list__item:not(last-child) {
+  margin-bottom: 30px;
+}
+
 .team__name {
   @include font(Roboto, 500, 16px, 1.18, 0.03em, var(--second-title-color));
   margin-bottom: 10px;

@@ -1,0 +1,13 @@
+.logo {
+@include font (Raleway, 700, 24px, 1.16, 0.03em, var(--accent-color));
+@include desk {
+    @include font(Raleway, 700, 26px, 1.19, 0.03em, var(--accent-color))}
+}
+
+.logo-studio__header {
+  color: var(--second-title-color)
+}
+
+.logo-studio__footer {
+  color: var(--main-title-color);
+}
