@@ -237,11 +237,11 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
-  transition: color var(--main-effects-option);
 }
 
-.mob-menu__nav-link:hover, .mob-menu__nav-link:focus, .mob-menu__nav-link:active {
+.mob-menu__nav-link:hover, .mob-menu__nav-link:focus, .mob-menu__nav-link:active, .mob-menu__nav-link_current {
   color: var(--accent-color);
+  transition: color var(--main-effects-option);
 }
 
 .mob-menu__item-link-current {
@@ -281,15 +281,18 @@ ul {
 .mob-menu__socials {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .social__item {
-  padding-left: 10px;
   padding-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-.social__item:not(:first-child) {
-  border-left: 1px solid rgba(33, 33, 33, 0.2);
+.social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .social__item:first-child {

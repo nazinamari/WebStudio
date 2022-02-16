@@ -62,12 +62,11 @@
 
 .mob-menu__nav-link {
   @include font(Roboto, 500, 40px, 1.17, 0.02em, var(--second-title-color));
+}
+
+.mob-menu__nav-link:hover, .mob-menu__nav-link:focus, .mob-menu__nav-link:active, .mob-menu__nav-link_current {
+  color: var(--accent-color);
   transition: color var(--main-effects-option);
-  &:hover,
-  &:focus,
-  &:active {
-    color: var(--accent-color);
-  }
 }
 
 .mob-menu__item-link-current {
@@ -92,15 +91,19 @@
     color: var(--accent-color);
   }
 }
+
 .mob-menu__socials {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .social__item {
-  padding-left: 10px;
   padding-right: 10px;
-  &:not(:first-child) {
-    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+  margin-top: 10px;
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   &:first-child {
     padding-left: 0px;
