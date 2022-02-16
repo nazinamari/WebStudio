@@ -1,22 +1,5 @@
 .team {
   background-color: #f5f4fa;
-  &__title {
-    margin-bottom: 50px;
-    @include font(
-      Roboto,
-      700,
-      28px,
-      1.18,
-      0.03em,
-      var(--secondary-black-color)
-    );
-    margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 50px;
-      font-size: 36px;
-      line-height: 1.17;
-    }
-  }
   &__description {
     padding-top: 30px;
     padding-bottom: 30px;

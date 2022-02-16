@@ -1,7 +1,10 @@
 .second-title {
+  text-align: center;
+  margin-bottom: 60px;
   @include font(Roboto, 700, 28px, 1.18, 0.03em, var(--second-title-color));
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
