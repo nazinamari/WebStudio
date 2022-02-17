@@ -1,4 +1,14 @@
 .modal-btn {
-  display: block;
+  padding: 10px 55px;
+  @extend %align-list;
   @extend %btn;
+  @include font(Roboto, 700, 16px, 1.87, 0.06em, var(--main-title-color));
+
 }
+
+.hero__btn {
+  @include font(Roboto, 700, 16px, 1.87, 0.06em, var(--main-title-color));
+  padding: 10px 32px;
+  @extend %btn;
+  @extend %align-list;
+  }
