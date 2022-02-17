@@ -144,7 +144,12 @@
   flex-wrap: wrap;
   align-items: center;
   @include font(Roboto, 400, 12px, 1.17, 0.03em, var(--first-text-color));
-}
+  @media screen and (min-width: 1200px) 
+    {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
 
 .modal-check-text span {
   width: 16px;
@@ -170,9 +175,10 @@
 }
 
 .check-text-link {
-  @include font(Roboto, 400, 14px, 1.71, 0.03em, var(--accent-color));
+  @include font(Roboto, 400, 12px, 1.17, 0.03em, var(--accent-color));
   text-decoration: underline solid var(--accent-color);
   text-decoration-skip-ink: none;
+  margin-left: 2px;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;

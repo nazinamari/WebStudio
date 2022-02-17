@@ -1258,11 +1258,18 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   font-family: Roboto;
-  font-weight: 14px;
-  font-size: 400;
-  line-height: 1.71;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-check-text span {
@@ -1290,12 +1297,13 @@ ul {
 .check-text-link {
   font-family: Roboto;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: underline solid var(--accent-color);
   text-decoration-skip-ink: none;
+  margin-left: 2px;
 }
 
 @media screen and (min-width: 1200px) {
