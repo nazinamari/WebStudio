@@ -23,30 +23,29 @@
   }
 }
 
-.features-list {
-  @include tab {
-    @include card-set
+.features-list__item  {
+  @include mob {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
-}
-
-.features-list__item {
   @include tab {
     text-align: left;
     flex-basis: calc(100% / 2 - 30px);
-    @include item
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - 30px);
   }
 }
 
+
 .features-item__title {
   text-transform: uppercase;
   margin-bottom: 10px;
-  @include font(Roboto, 700, 14px, 1.14, 0.03em, var(--second-title-color));
+  @include font(null, 700, null, 1.14, null, var(--second-title-color));
 }
 
 .features-item__text {
   text-align: left;
-  @include font(Roboto, 400, 14px, 1.71, 0.03em, var(--first-text-color));
+  @include font(null, 400, null, 1.71, null, var(--first-text-color));
 }

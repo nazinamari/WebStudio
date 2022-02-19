@@ -1,17 +1,18 @@
+@import "./base/common";
 @import "./utils/variables";
 @import "./utils/hidden";
 @import "./utils/placeholders";
-@import "./base/common";
-@import "./base/reset";
-@import "./utils/mixin";
+@import "./utils/mixin"; 
+@import "./utils/resets";
+@import "./utils/_flex-table";
 
 @import "./components/container";
 @import "./components/section";
 @import "./components/_logo";
 @import "./components/section-title";
 @import "./components/socials";
-@import "./components/btn";
 @import "./components/menu";
+@import "./components/_btn";
 
 @import "./layout/header";
 @import "./layout/clients";
@@ -21,5 +22,4 @@
 @import "./layout/features";
 @import "./layout/footer";
 @import "./layout/modal";
-
 @import "./layout/portfolio";

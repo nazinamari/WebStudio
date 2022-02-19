@@ -1,5 +1,6 @@
 .our-work {
   display: none;
+  padding-top: 0px;
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -29,7 +30,7 @@
 
 .our-work-img__title {
   position: absolute;
-  @include font(Roboto, 700, 14px, 1.14, 0.03em, var(--main-title-color));
+  @include font(null, 700, null, 1.14, null, var(--main-title-color));
   text-align: center;
   text-transform: uppercase;
   bottom: 0;

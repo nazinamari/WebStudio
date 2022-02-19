@@ -61,7 +61,7 @@
 }
 
 .mob-menu__nav-link {
-  @include font(Roboto, 500, 40px, 1.17, 0.02em, var(--second-title-color));
+  @include font(null, 500, 40px, 1.17, 0.02em, var(--second-title-color));
 }
 
 .mob-menu__nav-link:hover, .mob-menu__nav-link:focus, .mob-menu__nav-link:active, .mob-menu__nav-link_current {
@@ -81,10 +81,10 @@
   }
 }
 .mob-menu__contacts-mobile {
-  @include font(Roboto, 500, 34px, 1.17, 0.02em, var(--accent-color));
+  @include font(null, 500, 34px, 1.17, 0.02em, var(--accent-color));
 }
 .mob-menu__contacts-mail {
-  @include font(Roboto, 500, 24px, 1.17, 0.02em, var(--first-text-color));
+  @include font(null, 500, 24px, 1.17, 0.02em, var(--first-text-color));
   &:hover,
   &:focus,
   &:active {
@@ -110,5 +110,5 @@
   }
 }
 .mob-menu__social__link {
-  @include font(Roboto, 500, 18px, 1.22, 0.02em, var(--accent-color));
+  @include font(null, 500, 18px, 1.22, 0.02em, var(--accent-color));
 }

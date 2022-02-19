@@ -1,0 +1,8 @@
+.hero__btn {
+  @extend %btn;
+  @include font(Roboto, 700, 16px, 1.87, 0.06em, var(--main-title-color));}
+  
+.modal-btn {
+  @extend %btn;
+  @include font(Roboto, 700, 16px, 1.87, 0.06em, var(--main-title-color));
+  }

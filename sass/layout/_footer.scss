@@ -50,13 +50,13 @@
 
 .footer-adress {
   font-style: normal;
-  @include font(Roboto, 400, 14px, 1.71, 0.03em, var(--main-title-color));
+  color: var(--main-title-color);
 }
 
 .footer-mail,
 .footer-tel {
   font-style: normal;
-  @include font(Roboto, 400, 14px, 1.71, 0.03em, rgba(255, 255, 255, 0.6));
+  color: rgba(255, 255, 255, 0.6);
   transition: color var(--main-effects-option);
   &:hover,
   &:focus,
@@ -78,8 +78,10 @@
 .join-us__text {
   margin-bottom: 20px;
   text-transform: uppercase;
-  @include font(Roboto, 700, 14px, 1.14, 0.03em, var(--main-title-color));
+  letter-spacing: 1.14;
+  color: var(--main-title-color);
 }
+
 .footer-social-link {
   width: 100%;
   height: 100%;
@@ -115,7 +117,7 @@
 .footer-subscription__title {
   margin-bottom: 20px;
   text-transform: uppercase;
-  @include font(Roboto, 700, 14px, 1.14, 0.03em, var(--main-title-color));
+  @include font(null, 700, null, 1.14, null, var(--main-title-color));
 }
 
 .subscribe {
@@ -132,7 +134,7 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  @include font(Roboto, 400, 16px, 1.25, 0.03em, rgba(255, 255, 255, 0.6));
+  @include font(null, 400, 16px, 1.25, null, rgba(255, 255, 255, 0.6));
   outline: none;
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
@@ -146,7 +148,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 29px;
-  @include font(Roboto, 900, 16px, 1.87, 0.06em, var(--main-title-color));
+  @include font(null, 900, 16px, 1.87, 0.06em, var(--main-title-color));
   @extend %btn;
 }
 

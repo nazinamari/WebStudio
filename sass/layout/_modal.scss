@@ -66,7 +66,7 @@
 }
 
 .modal__title {
-  @include font(Roboto, 700, 20px, 1.5, 0.03em, var(--second-title-color));
+  @include font(null, 700, 20px, 1.5, null, var(--second-title-color));
   text-align: center;
   margin-bottom: 12px;
 }
@@ -123,27 +123,25 @@
     border-color: var(--accent-color);
   }
   &::placeholder {
-    @include font(Roboto, 400, 14px, 1.14, 0.01em, rgba(117, 117, 117, 0.5));
+    @include font(null, 400, null, 1.14, 0.01em, rgba(117, 117, 117, 0.5));
   }
 }
 
 .modal-input__label {
   display: block;
   margin-bottom: 4px;
-  @include font(Roboto, 400, 12px, 1.17, 0.03em, var(--first-text-color))
+  @include font(null, 400, 12px, null, null, var(--first-text-color))
 }
 
 
 .modal-checkbox__field {
-  display: flex;
   margin-bottom: 30px;
 }
 
 .modal-check-text {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  @include font(Roboto, 400, 12px, 1.17, 0.03em, var(--first-text-color));
+  @include font(null, 400, 12px, null, null, var(--first-text-color));
   @media screen and (min-width: 1200px) 
     {
       font-size: 14px;
@@ -151,12 +149,12 @@
     }
   }
 
-.modal-check-text span {
+.custom-check {
   width: 16px;
   height: 15px;
   border: 2px solid var(--second-title-color);
   border-radius: 4px;
-  box-shadow: 0px, 4px, 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   @extend %align-list;
   margin-right: 8px;
 }
@@ -165,12 +163,12 @@
   fill: transparent;
 }
 
-.modal-check:checked + .modal-check-text span {
+.modal-check:checked + .modal-check-text .custom-check {
   background-color: var(--accent-color);
   border: none;
 }
 
-.modal-check:checked + .modal-check-text span .icon-check {
+.modal-check:checked + .modal-check-text .custom-check .icon-check {
   fill: #ffffff; 
 }
 

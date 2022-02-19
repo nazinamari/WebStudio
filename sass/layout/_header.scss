@@ -15,12 +15,10 @@
   @media screen and (min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 26px;
-    margin-right: 88px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 24px;
     padding-bottom: 24px;
-    margin-right: 93px;
   }
 }
 
@@ -28,7 +26,6 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: unset;
-    margin-right: 84px;
   }
 }
 
@@ -44,7 +41,7 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    @include font(Roboto, 500, 14px, 1.14, 0.02em, var(--second-title-color));
+    @include font(null, 500, null, 1.14, 0.02em, var(--second-title-color));
     transition: color var(--main-effects-option);
   }
   &__link:hover,
@@ -73,8 +70,6 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: unset;
-    padding-top: 21px;
-    padding-bottom: 22px;
     &__item.mail {
       padding-bottom: 10px;
     }
@@ -102,8 +97,8 @@
 .contacts-link {
   display: flex;
   align-items: center;
-  @include font(Roboto, 500, 12px, 1.17, 0.02em, var(--first-text-color));
-  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1.17;
   transition: color var(--main-effects-option);
   &:hover,
   &:focus,
@@ -132,7 +127,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 14px;
     line-height: 1.14;
     .mail-icon {
       width: 16px;
