@@ -1,10 +1,8 @@
 .clients-list {
   @extend %align-list;
-  // @include card-set;
 }
 
 .clients-list__item {
-  // @include item;
   @extend %align-list;
   flex-basis: calc(100% / 2 - 30px);
   @media screen and (min-width: 768px) {
