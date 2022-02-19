@@ -179,8 +179,8 @@ ul {
 }
 
 .section-title {
-  padding-bottom: 30px;
   text-align: center;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
@@ -189,10 +189,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .section-title {
-    padding-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
-    margin-bottom: 50px;
     margin-bottom: 50px;
   }
 }
@@ -693,12 +691,6 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .team-list__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
 .team__name {
   font-weight: 500;
   font-size: 16px;
@@ -747,26 +739,21 @@ ul {
   }
 }
 
-.our-work__title {
-  padding-bottom: 50px;
-}
-
 .our-work-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0px;
   justify-content: center;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 
 .our-work-list__item {
   flex-basis: calc(100% / 3 - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+.our-work-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .our-work-img__title {
@@ -950,6 +937,7 @@ ul {
 .footer-social__title,
 .join-us__text {
   margin-bottom: 20px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1.14;
   color: var(--main-title-color);
@@ -986,6 +974,7 @@ ul {
 }
 
 .footer-subscription__title {
+  font-size: 14px;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;

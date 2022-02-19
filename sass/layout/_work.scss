@@ -6,23 +6,15 @@
   }
 }
 
-.our-work__title {
-  padding-bottom: 50px;
-}
-
 .our-work-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0px;
   justify-content: center;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 
 .our-work-list__item {
+  &:not(:last-child) {margin-right: 30px;}
   flex-basis: calc(100% / 3 - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
   position: relative;
   display: flex;
   justify-content: center;

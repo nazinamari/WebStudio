@@ -77,6 +77,7 @@
 .footer-social__title,
 .join-us__text {
   margin-bottom: 20px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1.14;
   color: var(--main-title-color);
@@ -115,6 +116,7 @@
 }
 
 .footer-subscription__title {
+  font-size: 14px;
   margin-bottom: 20px;
   text-transform: uppercase;
   @include font(null, 700, null, 1.14, null, var(--main-title-color));

@@ -1,12 +1,10 @@
 .section-title {
-  padding-bottom: 30px;
   text-align: center;
+  margin-bottom: 30px;
   @include font(null, 700, 28px, 1.18, null, var(--second-title-color));
   @media screen and (min-width: 1200px) {
-    padding-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
-    margin-bottom: 50px;
     margin-bottom: 50px;
   }
 }
