@@ -24,11 +24,6 @@
 }
 
 .features-list__item  {
-  @include mob {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
   @include tab {
     text-align: left;
     flex-basis: calc(100% / 2 - 30px);

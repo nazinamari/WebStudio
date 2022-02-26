@@ -669,7 +669,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .team-list {
     flex-wrap: nowrap;
-    margin-top: 0px;
   }
 }
 
@@ -798,12 +797,6 @@ ul {
   .features-icon__wrap {
     width: 270px;
     height: 120px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .features-list__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 
